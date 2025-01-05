@@ -1,4 +1,4 @@
-# README - Breast Cancer Detection Project
+# README - Breast Cancer Detection using Microscopic and Mammographic Diagnostics
 
 ## Project Overview
 This project focuses on the classification of breast cancer using two datasets:
