@@ -79,76 +79,75 @@ Contains 6 features describing the characteristics of detected masses.
   - **Model**: Random Forest with RFE and SMOTE (After Hyperparameter Tuning)
   - **Accuracy**: 96%
   - **AUC**: 1.00
-  - **Confusion Matrix**: 2 false positives, 2 false negatives
-  - **Summary**: SMOTE balanced the dataset, and RFE ensured the most important features were selected, enhancing both performance and interpretability.
+  - **Confusion Matrix**: 69 true positives (benign), 41 true positives (malignant)
 
 - **Support Vector Machine (Wisconsin)**:
 
   - **Model**: SVM with RFE on SMOTE Balanced Data(After Hyperparameter Tuning)
   - **Accuracy**: 95%
   - **AUC**: 1.00
-  - **Confusion Matrix**: 3 false positives, 3 false negatives
-  - **Summary**: Strong classification with high precision (0.96 for benign, 0.93 for malignant) and excellent recall.
+  - **Confusion Matrix**: 68 true positives (benign), 40 true positives (malignant)
 
 - **Gradient Boosting (Wisconsin)**:
 
   - **Model**: Gradient Boosting with RFE and SMOTE(After Hyperparameter Tuning)
   - **Accuracy**: 97%
   - **AUC**: 1.00
-  - **Confusion Matrix**: 1 false negative, 2 false positives
-  - **Summary**: Near-perfect classification with balanced precision, recall, and F1-scores.
+  - **Confusion Matrix**: 69 true positives (benign), 42 true positives (malignant)
 
 - **Logistic Regression (Wisconsin)**:
 
   - **Model**: Logistic Regression with RFE and SMOTE(After Hyperparameter Tuning)
   - **Accuracy**: 97%
   - **AUC**: 1.00
-  - **Confusion Matrix**: 1 false positive, 2 false negatives
-  - **Summary**: Excellent precision and recall, with minimal misclassification.
+  - **Confusion Matrix**:  70 true positives, 41 false negatives
+ 
+  
 
 - **Random Forest (Mammographic Mass)**:
 
   - **Model**: RF on SMOTE Balanced Data(After Hyperparameter Tuning)
   - **Accuracy**: 83%
   - **AUC**: 0.88
-  - **Confusion Matrix:** 21 false positive,11 false negatives
-  - **Summary**: Balanced performance with strong classification capabilities.
-
+  - **Confusion Matrix:**  80 true positives, 81 false negatives
+    
 - **SVM (Mammographic Mass)**:
 
   - **Model**: SVM on SMOTE Balanced Data(After Hyperparameter Tuning)
   - **Accuracy**: 80%
   - **AUC**: 0.88
-  - **Confusion Matrix:** 28 false positive, 10 false negatives
-  - **Summary**: Strong recall for malignant cases, reliable for identifying malignancies.
+  - **Confusion Matrix:** 73 true positives, 82 false negatives
+
 
 - **Gradient Boosting (Mammographic Mass)**:
 
   - **Model**: GB on Imbalanced Data(After Hyperparameter Tuning)
   - **Accuracy**: 83%
   - **AUC**: 0.89
-  - **Confusion Matrix:** 21 false positive, 11 false negatives
-  - **Summary**: Superior accuracy in imbalanced conditions, strong classification performance.
+  - **Confusion Matrix:** 80 true positives, 81 false negatives
+
+  
 
 - **Logistic Regression (Mammographic Mass)**:
 
   - **Model**: LR on Imbalanced Data(After Hyperparameter Tuning)
   - **Accuracy**: 83%
   - **AUC**: 0.90
-  - **Confusion Matrix:** 17 false positive, 11 false negatives
-  - **Summary**: Effective and reliable model for the mammographic mass dataset.
+  - **Confusion Matrix:** 80 true positives, 81 false negatives
+  
 ### Voting Classifier
-- ****Voting Classifier (Wisconsin)**
-- **Model**: Voting Classifier
+-  - **Voting Classifier  (Wisconsin)**:
+
+  - **Model**: Voting Classifier
   - **Accuracy**: 97%
-  - **AUC**: 1
-  - **Confusion Matrix:** 1 false positive, 1 false negatives
+  - **AUC**: 1.00
+  - **Confusion Matrix**:  69 true positives, 42 false negatives
     
 - **Voting Classifier (Mammographic Mass)**:
   - **Model**: Voting Classifier
   - **Accuracy**: 84%
   - **AUC**: 0.89
-  - **Confusion Matrix:** 20 false positive, 11 false negatives
+  - **Confusion Matrix:** 81 true positives, 81 false negatives
 
 ## Requirements
 
